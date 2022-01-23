@@ -1,20 +1,18 @@
 import React from 'react';
-import Bar from './Bar';
-import ContentMiddle from './ContentMiddle';
-
+import TopBar from './TopBar';
+import ContentRowTop from './ContentRowTop';
+import Footer from './Footer';
 function Wrapper(){
     return (
         <React.Fragment>
             {/*<!-- Content Wrapper -->*/}
             <div id="content-wrapper" className="d-flex flex-column">
                 {/*<!-- Main Content -->*/}
-                
-                
                 <div id="content">
-                    <Bar />
-                    <ContentMiddle />
-                    
-    </div>
+                    <TopBar />
+                    <ContentRowTop />
+                    <Footer />
+                </div>
             </div>    
         </React.Fragment>
     )
