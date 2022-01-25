@@ -7,6 +7,7 @@ import SmallCard from './SmallCard';
 const GeneralContent = () => {
 	const [productos, setproductos] = useState([]);
 	const [users, setusers] = useState([]);
+	const [categories, setcategories] = useState([]);
 		
 	
 	useEffect(() => {   
@@ -24,18 +25,26 @@ const GeneralContent = () => {
 			setusers(user)
 		})
 	},[])
+
+	useEffect(() => {   
+		fetch("http://localhost:3001/api/categories")
+		.then(response => response.json())
+		.then(categoria => {
+			setcategories(categoria)
+		})
+	},[])
 	
 	
-		 
-	const datos = [productos,users,productos.CountByCategory]
+	
+	const datos = [productos,users,categories]
 	
 	 
 	
 	return (
 	   
 			<div className="row">
-				{datos.map((dato) => (
-					 <SmallCard {...dato} />
+				{datos.map((dato,i) => (
+					 <SmallCard {...dato} key={i} />
 				)
 					)}
 			   
