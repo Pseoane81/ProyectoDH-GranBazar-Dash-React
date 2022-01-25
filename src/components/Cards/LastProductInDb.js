@@ -26,10 +26,10 @@ function LastProductInDb() {
             </div>
             <div className="card-body">
                 <div className="text-center">
-                    <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={products[cantidad - 1].img} alt="algo" />
+                    <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} /*src={products[cantidad - 1].img}*/ alt="algo" />
                 </div>
-                <p>{products[cantidad - 1].descripcion}</p>
-                <a className="btn btn-danger" target="_blank" href={products[cantidad - 1].detail} rel="nofollow" >Ver detalle de producto</a>
+                <p></p>
+                <a className="btn btn-danger" target="_blank" /*href={products[cantidad - 1].detail}*/ rel="nofollow" >Ver detalle de producto</a>
             </div>
         </div>
         </div>
