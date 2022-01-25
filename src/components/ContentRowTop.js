@@ -1,9 +1,9 @@
 import React from 'react';
 
-import GeneralContent from './GeneralContent';
-import CategoriesInDb from './CategoriesInDb';
-import LastProductInDb from './LastProductInDb';
-import Chart from './Chart';
+import GeneralContent from './Data/GeneralContent';
+import CategoriesInDb from './Cards/CategoriesInDb';
+import LastProductInDb from './Cards/LastProductInDb';
+import Chart from './Tablas/Chart';
 
 
 

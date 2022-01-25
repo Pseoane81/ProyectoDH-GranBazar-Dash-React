@@ -7,8 +7,9 @@ function App() {
   return (
     <React.Fragment>
       <div id="wrapper">
+      <SideBar />
      <Wrapper />
-     <SideBar />
+     
      </div>
     </React.Fragment>
   );

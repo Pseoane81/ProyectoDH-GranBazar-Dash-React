@@ -1,5 +1,5 @@
 import React from "react";
-import imagenFondo from '../assets/images/estanteriadecohierromadera4est_11.jpeg';
+import imagenFondo from '../../assets/images/estanteriadecohierromadera4est_11.jpeg';
 
 function LastProductInDb() {
     return (
