@@ -1,7 +1,22 @@
-import React from "react";
-import imagenFondo from '../../assets/images/estanteriadecohierromadera4est_11.jpeg';
+import React, { useState, useEffect } from "react";
+
 
 function LastProductInDb() {
+    const [products, setproducts] = useState([]);
+
+    useEffect(() => {   
+		fetch("http://localhost:3001/api/products")
+		.then(response => response.json())
+		.then(data => {
+			setproducts(data.products)
+		})
+	},[])
+
+    let cantidad = products.length
+    console.log(products[cantidad - 1])
+
+
+
     return (
        
         <div className="col-lg-6 mb-4">
@@ -11,10 +26,10 @@ function LastProductInDb() {
             </div>
             <div className="card-body">
                 <div className="text-center">
-                    <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={imagenFondo} alt=" Star Wars - Mandalorian "/>
+                    <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={products[cantidad - 1].img} alt="algo" />
                 </div>
-                <p>Estanteria de hierro y madera con 4 estantes. Se entrega armada</p>
-                <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">Ver detalle de producto</a>
+                <p>{products[cantidad - 1].descripcion}</p>
+                <a className="btn btn-danger" target="_blank" href={products[cantidad - 1].detail} rel="nofollow" >Ver detalle de producto</a>
             </div>
         </div>
         </div>
