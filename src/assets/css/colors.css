@@ -1,0 +1,32 @@
+/*esto es el sidebar*/
+.color-sidebar  {
+    background-color: #3d405b3d;
+    background-image: linear-gradient(180deg,#3d405b9d 10%,#3d405b32 100%);
+    background-size: cover;
+}
+/*esto es el header*/
+.header-color {
+    background-color: #3D405B;
+}
+/*texto de el admin*/
+.texto-blanco   {
+    color: #ffffff;
+}
+.campanita{
+    color:#ffffff
+}
+
+.sidebar .sidebar-action {
+    text-align: center;
+    color: #ffffff;
+}
+
+
+   
+ .nav-items .nav-links span :hover{
+    font-size: 17px;
+    color: #81B29A ;
+}
+.campanita:hover{
+    color: #81B29A ; 
+}
