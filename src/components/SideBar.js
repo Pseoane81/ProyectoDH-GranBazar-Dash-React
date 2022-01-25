@@ -1,9 +1,11 @@
 import React from 'react';
 import image from '../assets/images/logo-transparente.png';
 
+
 function SideBar(){
     return(
         <React.Fragment>
+            
             {/*<!-- Sidebar -->*/}
             <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
 
@@ -56,7 +58,7 @@ function SideBar(){
                 <hr className="sidebar-divider d-none d-md-block"/>
             </ul>
             {/*<!-- End of Sidebar -->*/}
-            
+        
         </React.Fragment>
     )
 }
