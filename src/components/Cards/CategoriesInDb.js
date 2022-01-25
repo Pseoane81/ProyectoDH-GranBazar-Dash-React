@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
 
 function CategoriesInDb () {
+    const [categories, setcategories] = useState([]);
+
+    useEffect(() => {   
+		fetch("http://localhost:3001/api/products")
+		.then(response => response.json())
+		.then(data => {
+			setcategories(data.CountByCategory)
+		})
+	},[])
+
+
     return (
         <div className="col-lg-6 mb-4">						
         <div className="card shadow mb-4">
@@ -9,43 +21,18 @@ function CategoriesInDb () {
             </div>
             <div className="card-body">
                 <div className="row">
-                    <div className="col-lg-6 mb-4">
-                        <div className="card bg-dark text-white shadow">
-                            <div className="card-body">
-                                Muebles
+                   {
+                    categories.map((category, i) => (
+                        <div className="col-lg-6 mb-4" key={i}>
+                            <div className="card bg-dark text-white shadow">
+                                <div className="card-body">
+                                    {category.Nombre} Tiene {category.Cantidad} Productos
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-lg-6 mb-4">
-                        <div className="card bg-dark text-white shadow">
-                            <div className="card-body">
-                                Decoración
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 mb-4">
-                        <div className="card bg-dark text-white shadow">
-                            <div className="card-body">
-                                Uso personal
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 mb-4">
-                        <div className="card bg-dark text-white shadow">
-                            <div className="card-body">
-                                Viajes
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 mb-4">
-                        <div className="card bg-dark text-white shadow">
-                            <div className="card-body">
-                                Destacados
-                            </div>
-                        </div>
-                    </div>
-                    
-
+                       ))
+                   } 
+                                    
                 </div>
             </div>
         </div>
