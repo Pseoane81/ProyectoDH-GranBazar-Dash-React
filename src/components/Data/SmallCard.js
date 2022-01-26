@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
+
+
 function SmallCard(props) {
     return (
         <div className="col-md-4 mb-4">
@@ -12,7 +14,7 @@ function SmallCard(props) {
 											<div className="h5 mb-0 font-weight-bold text-gray-800">{props.count}</div>
 										</div>
 										<div className="col-auto">
-											<i className="fas fa-film fa-2x PROP CORRSPONDIENTE text-gray-300"> </i>
+											<i className={`fas ${props.icon} fa-2x text-gray-300`}> </i>
 										</div>
 									</div>
 								</div>
