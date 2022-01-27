@@ -45,11 +45,16 @@ function Chart() {
 
                         </tbody>
                     </table>
+
+                <button>previo</button>
+                <button>siguiente</button>
+                    
                 </div>
             </div>
         </div>
-
+        
     )
+    
 }
 
 export default Chart;
