@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ChartRow from './ChartRow';
 
+
 function Chart() {
     const [tableRowsData, setptableRowsData] = useState([]);
 
@@ -46,7 +47,7 @@ function Chart() {
                         </tbody>
                     </table>
 
-                <button>previo</button>
+                <button >previo</button>
                 <button>siguiente</button>
                     
                 </div>
