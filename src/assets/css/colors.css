@@ -1,6 +1,6 @@
 /*esto es el sidebar*/
 .color-sidebar  {
-    background-color: #3d405b3d;
+    background-color: #3D405B;
     background-image: linear-gradient(180deg,#3d405b9d 10%,#3d405b32 100%);
     background-size: cover;
 }
@@ -10,15 +10,15 @@
 }
 /*texto de el admin*/
 .texto-blanco   {
-    color: #ffffff;
+    color: #F4F1DE;
 }
 .campanita{
-    color:#ffffff
+    color:#F4F1DE;
 }
 
 .sidebar .sidebar-action {
     text-align: center;
-    color: #ffffff;
+    color: #F4F1DE;
 }
 
 
