@@ -4,6 +4,7 @@ import './assets/css/colors.css';
 import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+import './assets/css/btn.css';
 
 ReactDOM.render(
   <React.StrictMode>

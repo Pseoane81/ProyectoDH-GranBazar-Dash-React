@@ -1,0 +1,13 @@
+.btn-prev-next {
+    display:flex ;
+    justify-content: space-between;
+}
+
+.btn-prev {
+    background-color : rgb(79, 79, 79);
+    color: white;
+}
+.btn-next {
+    background-color : rgb(79, 79, 79);
+    color: white;
+    }

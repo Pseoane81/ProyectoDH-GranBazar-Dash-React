@@ -3,14 +3,28 @@ import ChartRow from './ChartRow';
 
 function Chart() {
     const [tableRowsData, setptableRowsData] = useState([]);
+    const [page, setPage] = useState(0);
+    
 
-    useEffect(() => {   
-		fetch("http://localhost:3001/api/products")
+    useEffect(() => {
+        
+        fetch(`http://localhost:3001/api/products/page/${page}`)
 		.then(response => response.json())
 		.then(data => {
 			setptableRowsData(data.products)
 		})
-	},[])
+	},[page])
+    console.log(tableRowsData)
+    
+
+    const previousPage = () => {
+        if (page > 0) {
+            setPage(page - 1);
+        }
+    }
+    const nextPage = () => {
+        setPage(page + 1);
+    }
 
     return (
         /* <!-- DataTales Example --> */
@@ -27,15 +41,7 @@ function Chart() {
                                 <th>Color</th>
                             </tr>
                         </thead>
-                        <tfoot>
-                            <tr>
-                                <th>ID</th>
-                                <th>Nombre</th>
-                                <th>Categoria</th>
-                                <th>Origen</th>
-                                <th>Color</th>
-                            </tr>
-                        </tfoot>
+                        
                         <tbody>
                             {
                             tableRowsData.map( ( row , i) => {
@@ -45,6 +51,10 @@ function Chart() {
 
                         </tbody>
                     </table>
+                    <div className="btn-prev-next">
+                    <button className="btn-prev" onClick={previousPage}>Anterior</button>
+                    <button className="btn-next" onClick={nextPage}>Siguiente</button>
+                    </div>
                 </div>
             </div>
         </div>
