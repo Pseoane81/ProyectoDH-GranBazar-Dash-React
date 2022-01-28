@@ -13,15 +13,17 @@ function ChartRow(props){
                             )}
                         </ul>
                     </td>
-                    <td>{props.name}</td>
+                    
+                   
+                    <td>{props.origen.country}</td>
                     <td>
+
                         <ul>
                             {props.colors.map( (category,i) => 
                                 <li key={`category ${i}`}>{category.color}</li>
                             )}
                         </ul>
                     </td>
-
                     
                     
                     
