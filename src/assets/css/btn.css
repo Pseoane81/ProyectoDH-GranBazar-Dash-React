@@ -4,10 +4,15 @@
 }
 
 .btn-prev {
-    background-color : rgb(79, 79, 79);
-    color: white;
+    background-color :#5c6192;
+    color: #ffffff;
+    border-radius:8px ;
+
 }
 .btn-next {
-    background-color : rgb(79, 79, 79);
-    color: white;
-    }
+    background-color :#5c6192;
+    color: #ffffff;
+    border-radius:8px ;
+
+}
+

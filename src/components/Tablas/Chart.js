@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ChartRow from './ChartRow';
 
 
+
 function Chart() {
     const [tableRowsData, setptableRowsData] = useState([]);
     const [page, setPage] = useState(0);
