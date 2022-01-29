@@ -15,7 +15,7 @@ function ChartRow(props){
                     </td>
                     
                    
-                    <td>{props.origen.country}</td>
+                    <td>{props.Country.country}</td>
                     <td>
 
                         <ul>

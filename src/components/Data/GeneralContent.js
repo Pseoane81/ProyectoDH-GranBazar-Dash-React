@@ -41,7 +41,7 @@ const GeneralContent = () => {
 	 
 	
 	return (
-	   
+		 <div className="resumen">
 			<div className="row">
 				{datos.map((dato,i) => (
 					 <SmallCard {...dato} key={i} />
@@ -49,7 +49,7 @@ const GeneralContent = () => {
 					)}
 			   
 	
-			</div>
+			</div></div>
 		)
 	}
 	

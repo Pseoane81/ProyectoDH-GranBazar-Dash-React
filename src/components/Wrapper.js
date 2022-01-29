@@ -2,6 +2,7 @@ import React from 'react';
 import TopBar from './TopBar';
 import ContentRowTop from './ContentRowTop';
 import Footer from './Footer/Footer';
+
 function Wrapper(){
     return (
         <React.Fragment>
