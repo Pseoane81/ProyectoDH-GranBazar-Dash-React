@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import TopBar from "../TopBar";
 import SmallCard from './SmallCard';
+
 
 
 /*aca pasamos el fetch*/
@@ -42,7 +44,10 @@ const GeneralContent = () => {
 	
 	return (
 		 <div className="resumen">
+			
 			<div className="row">
+			
+			
 				{datos.map((dato,i) => (
 					 <SmallCard {...dato} key={i} />
 				)

@@ -7,9 +7,16 @@ import LastUserInDb from './LastUserInDb';
 function InDb(){
     return(
         <React.Fragment>
-            <div className="ultimos">
-        <LastProductInDb />
-        <LastUserInDb />      
+            <div >
+                <ul className="ultimos">
+                    <li className="list"><LastProductInDb /></li>
+                    <li><LastUserInDb />  </li>
+                    </ul>
+                
+            
+
+        
+            
         </div>
         </React.Fragment>
     )

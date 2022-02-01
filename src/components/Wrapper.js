@@ -1,7 +1,7 @@
 import React from 'react';
 import TopBar from './TopBar';
 import ContentRowTop from './ContentRowTop';
-import Footer from './Footer/Footer';
+
 
 function Wrapper(){
     return (
@@ -11,9 +11,9 @@ function Wrapper(){
                 {/*<!-- Main Content -->*/}
                 <div id="content">
                 
-                <TopBar />
+                    
                     <ContentRowTop />
-                    <Footer />
+                   
                 </div>
             </div>    
         </React.Fragment>
