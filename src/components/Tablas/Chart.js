@@ -17,7 +17,7 @@ function Chart() {
 			setptableRowsData(data.products)
 		})
 	},[page])
-    console.log(tableRowsData)
+    
     
 
     const previousPage = () => {

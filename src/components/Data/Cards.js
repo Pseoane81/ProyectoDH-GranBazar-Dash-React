@@ -1,23 +1,22 @@
 import React from 'react';
-import SmallCard from './SmallCard';
-import ExtraSmallCard from './ExtraSmallCard';
+import GeneralContent from './GeneralContent';
+import ExtraCards from './ExtraCards';
 
  
-function Cards(){
-    return(
-        <React.Fragment>
-            <div >
-                <ul>
-                    <li><SmallCard /></li>
-                    <li><ExtraSmallCard />  </li>
-                </ul>
-                
-            
-
-        
-            
-        </div>
-        </React.Fragment>
-    )
+function Cards() {
+  return (
+    <React.Fragment>
+      <div>
+        <ul className="ultimos">
+          <li>
+            <GeneralContent />
+          </li>
+          <li>
+            <ExtraCards />
+          </li>
+        </ul>
+      </div>
+    </React.Fragment>
+  );
 }
 export default Cards;
