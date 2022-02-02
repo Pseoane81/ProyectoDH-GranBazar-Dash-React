@@ -11,6 +11,7 @@ import InDb from './Cards/InDb';
 import TopBar from './TopBar';
 import { BrowserRouter , Routes , Route } from 'react-router-dom';
 import NotFound from './NotFound';
+import Cards from './Data/Cards';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
       <Route path='*' element={<NotFound />} />
       <Route exact path="/" element= {<Wrapper />}> </Route>
       <Route path="last" element= {<InDb />}> </Route>
-      <Route path="resumen" element= {<GeneralContent />}> </Route>
+      <Route path="resumen" element= {<Cards />}> </Route>
       <Route path="categories" element= {<CategoriesInDb />}> </Route>
       <Route path="list" element= {<Chart />}> </Route>
       
