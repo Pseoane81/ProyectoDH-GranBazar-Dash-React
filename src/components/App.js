@@ -2,8 +2,7 @@ import React from 'react';
 import SideBar from './SideBar';
 import Wrapper from './Wrapper';
 import '../assets/css/app.css'
-import LastProductInDb from './Cards/LastProductInDb';
-import GeneralContent from './Data/GeneralContent';
+
 import Footer from './Footer/Footer';
 import CategoriesInDb from './Cards/CategoriesInDb';
 import Chart from './Tablas/Chart';
@@ -18,10 +17,11 @@ function App() {
    
      <React.Fragment>
        
-      <div id="wrapper">
+      <div id="wrapper" width="100%">
        
       <SideBar /> 
-      
+      <div className="divmaldito">
+      <TopBar />
       <Routes >
       <Route path='*' element={<NotFound />} />
       <Route exact path="/" element= {<Wrapper />}> </Route>
@@ -32,8 +32,9 @@ function App() {
       
       
      </Routes>
-     
      </div>
+     </div>
+     
      <Footer />
     </React.Fragment>
     

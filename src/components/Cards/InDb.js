@@ -6,16 +6,18 @@ import LastUserInDb from './LastUserInDb';
 function InDb() {
   return (
     <React.Fragment>
-      <div>
+    
+      
+      
         <ul className="ultimos">
           <li className="list">
-            <LastProductInDb />
+          <LastProductInDb />
           </li>
           <li>
-            <LastUserInDb />{" "}
+          <LastUserInDb />{" "}
           </li>
         </ul>
-      </div>
+      
     </React.Fragment>
   );
 }

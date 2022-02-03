@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ChartRow from './ChartRow';
-import TopBar from "../TopBar";
+
 
 
 
@@ -31,7 +31,7 @@ function Chart() {
 
     return (
         /* <!-- DataTales Example --> */<>
-        
+        <>
         <div className="card shadow mb-4">
             <div className="card-body">
                 <div className="table-responsive">
@@ -63,6 +63,7 @@ function Chart() {
                 </div>
             </div>
         </div>
+        </>
         </>
     )
     

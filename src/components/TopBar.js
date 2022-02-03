@@ -8,7 +8,7 @@ function TopBar(){
     return(
         <React.Fragment>
 				{/*<!-- Topbar -->*/}
-				<nav className="navbar navbar-expand navbar-light header-color topbar mb-4 static-top shadow">
+				<nav className="navbar navbar-expand navbar-light header-color topbar mb-4 static-top shadow topbarcss">
 
 					{/*<!-- Sidebar Toggle (Topbar) -->*/}
 					<button id="sidebarToggleTop" className="btn btn-link d-md-none rounded-circle mr-3">

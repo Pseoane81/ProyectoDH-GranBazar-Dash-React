@@ -6,16 +6,15 @@ import ExtraCards from './ExtraCards';
 function Cards() {
   return (
     <React.Fragment>
-      <div>
-        <ul className="ultimos">
-          <li>
-            <GeneralContent />
-          </li>
-          <li>
-            <ExtraCards />
-          </li>
-        </ul>
-      </div>
+      
+      <ul className="ultimos">
+          <li className="list">
+            <GeneralContent /></li>
+     
+          
+     <ExtraCards />
+     </ul>
+     
     </React.Fragment>
   );
 }

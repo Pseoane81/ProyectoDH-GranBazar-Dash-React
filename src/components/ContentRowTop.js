@@ -5,7 +5,7 @@ import CategoriesInDb from './Cards/CategoriesInDb';
 import LastProductInDb from './Cards/LastProductInDb';
 
 import Chart from './Tablas/Chart';
-import TopBar from './TopBar';
+
 
 
 
@@ -14,7 +14,8 @@ function ContentRowTop(){
     return(
         <React.Fragment>
 				{/*<!-- Content Row Top -->*/}
-				<TopBar />
+				<div>
+				
 				<div className="container-fluid">
 					<div className="d-sm-flex aligns-items-center justify-content-between mb-4">
 						<h1 className="h3 mb-0 text-gray-800">App Dashboard</h1>
@@ -34,6 +35,7 @@ function ContentRowTop(){
 						
 					</div>
 					<Chart />
+				</div>
 				</div>
 				{/*<!--End Content Row Top-->*/}
 
