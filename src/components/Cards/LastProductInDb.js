@@ -27,7 +27,7 @@ function LastProductInDb() {
                     <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={lastProduct.img}  alt="Ultimo producto" />
                 </div>
                 <p>{lastProduct.descripcion} </p>
-                <a className="btn btn-danger" target="_blank" href={lastProduct.detail}  rel="nofollow">Ver detalle de producto</a>
+                <a className="button" target="_blank" href={lastProduct.detail}  rel="nofollow">Ver detalle de producto</a>
             </div>
         </div>
         </div>

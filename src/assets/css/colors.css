@@ -21,7 +21,10 @@
     color: #F4F1DE;
 }
 
-
+.buttongo {
+    background-color: #81B29A;
+    color: #F4F1DE;
+}
    
 .nav-items .nav-links span :hover{
     font-size: 17px;
